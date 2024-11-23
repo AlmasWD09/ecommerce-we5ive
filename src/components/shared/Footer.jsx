@@ -1,5 +1,8 @@
-import { Icon } from "@iconify/react"
+
 import Image from "next/image"
+import { FaFacebook } from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
+import { GrLinkedinOption } from "react-icons/gr";
 
 
 const Footer = () => {
@@ -52,9 +55,9 @@ const Footer = () => {
           <div>
             <h5>Social Link</h5>
             <span className="flex gap-3 pt-3">
-            <Icon icon="logos:facebook" />
-            <Icon icon="devicon:twitter" />
-            <Icon icon="icon-park:instagram-one" />
+            <FaFacebook />
+            <RiTwitterXFill />
+            <GrLinkedinOption />
             </span>
           </div>
         </div>

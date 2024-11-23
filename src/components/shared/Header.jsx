@@ -1,9 +1,10 @@
 "use client";
-import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { CgMenuLeft } from "react-icons/cg";
+import { RiCloseLine } from "react-icons/ri";
 
 const Header = () => {
   const pathname = usePathname();
@@ -24,9 +25,9 @@ const Header = () => {
           {/* Mobile Toggle Icon */}
           <div className="lg:hidden" onClick={() => setMenu(!getMenu)}>
             {getMenu ? (
-              <Icon className="text-4xl" icon="material-symbols:close" />
+            <RiCloseLine className="text-2xl "/>
             ) : (
-              <Icon className="text-4xl" icon="ic:baseline-menu" />
+              <CgMenuLeft className="text-2xl "/>
             )}
           </div>
 
