@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Indian Sharee",
+    "image": "/images/summer/image 3.png",
+    "rating": 4.5,
+    "price": 2300
+  },
+  {
+    "name": "Half Sleeve Shirt",
+   "image": "/images/summer/image 4.png",
+    "rating": 4.0,
+    "price": 2300
+  },
+  {
+    "name": "Woman Wearing Sari",
+    "image": "/images/summer/image 5.png",
+    "rating": 4.8,
+    "price": 2300
+  },
+  {
+    "name": "Checkered Shirt",
+    "image": "/images/summer/image 6.png",
+    "rating": 4.3,
+    "price": 2300
+  }
+]
