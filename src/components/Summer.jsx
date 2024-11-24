@@ -1,6 +1,9 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { BsArrowLeft } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
+
 
 const Summer = () => {
   const [products, setProducts] = useState([]);
@@ -21,9 +24,16 @@ const Summer = () => {
 
   return (
     <section className="container mx-auto px-4 py-8">
-      <div className="mb-4">
-      <h2 className="uppercase text-primary ">Summer</h2>
-      <p>Big Deal</p>
+
+      <div className="flex justify-between mb-2">
+        <div>
+          <h2 className="uppercase text-primary ">Summer</h2>
+          <p>Big Deal</p>
+        </div>
+        <div className="flex gap-2">
+          <span className="border border-primary rounded-full flex justify-center items-center h-8 w-8"><BsArrowLeft /></span>
+          <span className="border border-primary rounded-full flex justify-center items-center h-8 w-8"><BsArrowRight /></span>
+        </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product, idx) => (
@@ -50,10 +60,10 @@ const Summer = () => {
                 ))}
                 <span className="text-black">({product.rating})</span>
               </div>
-             <div className="flex justify-between">
-             <h5 className="font-semibold ">{product.name}</h5>
-             <h4 className="text-lg font-semibold">BDT {product.price}</h4>
-             </div>
+              <div className="flex justify-between">
+                <h5 className="font-semibold ">{product.name}</h5>
+                <h4 className="text-lg font-semibold">BDT {product.price}</h4>
+              </div>
             </div>
             <div className="mt-4">
               <button className="w-full py-2 border border-primary hover:text-white font-semibold rounded hover:bg-primary transition duration-300">

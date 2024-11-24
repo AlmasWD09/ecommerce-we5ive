@@ -1,3 +1,5 @@
+import Banner from "@/components/Banner";
+import FeaturedProduct from "@/components/FeaturedProduct";
 import NewCustomerDiscount from "@/components/NewCustomerDiscount";
 import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
@@ -9,6 +11,8 @@ export default function Home() {
    <>
    <div className="">
     <Header />
+    <Banner />
+    <FeaturedProduct />
     <NewCustomerDiscount />
     <Summer />
     <Footer />

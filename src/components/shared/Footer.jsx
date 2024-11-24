@@ -6,6 +6,7 @@ import { GrLinkedinOption } from "react-icons/gr";
 
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-gray-400 text-white">
       <section className="container mx-auto py-10 px-4">
@@ -39,7 +40,7 @@ const Footer = () => {
         </div>
 
         {/* contact part */}
-        <div className="grid grid-cols-1 md:grid-cols-4 justify-between pt-6 space-y-4 md:space-y-0">
+        <div className="grid grid-cols-1 md:grid-cols-4 justify-between md:gap-14 pt-6 space-y-4 md:space-y-0">
           <div className="">
             <h5>Contact Us</h5>
             <p>support@we5ive.com</p>
@@ -61,7 +62,11 @@ const Footer = () => {
             </span>
           </div>
         </div>
+
       </section>
+        <div className="bg-primary text-center py-1">
+          <h4>© {currentYear} | We5ive</h4>
+        </div>
     </footer>
   )
 }
