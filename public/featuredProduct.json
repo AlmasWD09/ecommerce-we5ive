@@ -1,27 +1,30 @@
 [
-    {
-      "name": "Indian Sharee",
-      "image": "/images/featuredProduct/photo01.png",
-      "rating": 4.5,
-      "price": 2300
-    },
-    {
-      "name": "Hoodie",
-     "image": "/images/featuredProduct/photo02.png",
-      "rating": 4.0,
-      "price": 2300
-    },
-    {
-      "name": "Plazu",
-     "image": "/images/featuredProduct/photo03.png",
-      "rating": 4.8,
-      "price": 2300
-    },
-    {
-      "name": "Jacket",
-      "image": "/images/featuredProduct/photo04.png",
-      "rating": 4.3,
-      "price": 2300
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Indian Sharee",
+    "image": "/images/featuredProduct/photo01.png",
+    "rating": 4.5,
+    "price": 2300
+  },
+  {
+    "id": 2,
+    "name": "Hoodie",
+    "image": "/images/featuredProduct/photo02.png",
+    "rating": 4.0,
+    "price": 2300
+  },
+  {
+    "id": 3,
+    "name": "Plazu",
+    "image": "/images/featuredProduct/photo03.png",
+    "rating": 4.8,
+    "price": 2300
+  },
+  {
+    "id": 4,
+    "name": "Jacket",
+    "image": "/images/featuredProduct/photo04.png",
+    "rating": 4.3,
+    "price": 2300
+  }
+]

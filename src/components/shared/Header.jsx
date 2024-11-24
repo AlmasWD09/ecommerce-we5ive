@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { CgMenuLeft } from "react-icons/cg";
 import { RiCloseLine } from "react-icons/ri";
@@ -9,6 +9,7 @@ import { RiCloseLine } from "react-icons/ri";
 const Header = () => {
   const pathname = usePathname();
   const [getMenu, setMenu] = useState(false);
+  const router = useRouter();
 
   const navLinks = [
     { title: "Home", path: "/" },
@@ -17,6 +18,9 @@ const Header = () => {
     { title: "What's New", path: "/what-new" },
   ];
 
+  const handleClick = () => {
+    router.push('/')
+  }
   return (
     <div className="w-full h-20 font-Inter bg-gray-300 shadow-md">
       <div className="h-full flex items-center justify-between container mx-auto px-4">
@@ -25,15 +29,15 @@ const Header = () => {
           {/* Mobile Toggle Icon */}
           <div className="lg:hidden" onClick={() => setMenu(!getMenu)}>
             {getMenu ? (
-            <RiCloseLine className="text-2xl "/>
+              <RiCloseLine className="text-2xl " />
             ) : (
-              <CgMenuLeft className="text-2xl "/>
+              <CgMenuLeft className="text-2xl " />
             )}
           </div>
 
           {/* Logo */}
-          <div className="flex items-center">
-            <Image src="/images/header/logo.png" alt="logo" height={40} width={120} />
+          <div className="flex items-center cursor-pointer">
+            <Image onClick={() => handleClick()} src="/images/header/logo.png" alt="logo" height={40} width={120} />
           </div>
         </div>
 
@@ -43,9 +47,8 @@ const Header = () => {
             {navLinks.map((item) => (
               <Link key={item.path} href={item.path}>
                 <li
-                  className={`px-4 py-1 rounded-md ${
-                    pathname === item.path ? "font-extrabold text-primary" : ""
-                  }`}
+                  className={`px-4 py-1 rounded-md ${pathname === item.path ? "font-extrabold text-primary" : ""
+                    }`}
                 >
                   {item.title}
                 </li>
@@ -71,9 +74,8 @@ const Header = () => {
             {navLinks.map((item) => (
               <Link key={item.path} href={item.path}>
                 <li
-                  className={`px-4 py-2 rounded-md ${
-                    pathname === item.path ? "font-extrabold text-primary" : ""
-                  }`}
+                  className={`px-4 py-2 rounded-md ${pathname === item.path ? "font-extrabold text-primary" : ""
+                    }`}
                 >
                   {item.title}
                 </li>

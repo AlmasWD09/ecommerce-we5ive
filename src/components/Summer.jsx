@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { BsArrowLeft } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
@@ -7,6 +8,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Summer = () => {
   const [products, setProducts] = useState([]);
+  const router = useRouter();
 
   // Data load
   useEffect(() => {
@@ -21,6 +23,12 @@ const Summer = () => {
     };
     fetchData();
   }, []);
+
+   // Handle navigation to dynamic product page
+   const handleAddToCart = (productId) => {
+    console.log(productId)
+    router.push(`/product/${productId}`); // Navigate to dynamic route
+  };
 
   return (
     <section className="container mx-auto px-4 py-8">
@@ -43,6 +51,7 @@ const Summer = () => {
           >
             <div className="relative h-[220px] text-center">
               <Image
+              onClick={() => handleAddToCart(product.id)} 
                 src={product.image}
                 alt={product.name}
                 width={300}
