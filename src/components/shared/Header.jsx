@@ -29,7 +29,7 @@ const Header = () => {
   }
   return (
     <nav>
-      <div className="w-full h-20 font-Inter bg-gray-300 shadow-md">
+      <div className="w-full h-20 font-Inter bg-white shadow-md">
       <div className="h-full flex items-center justify-between container mx-auto px-4">
         {/* Left Section: Toggle Icon and Logo */}
         <div className="flex items-center gap-4">
@@ -66,7 +66,7 @@ const Header = () => {
 
         {/* Right Section: Login Button */}
 
-        <div className="flex items-center justify-end lg:justify-start gap-1">
+        <div className="flex items-center justify-end lg:justify-start gap-3">
           {/* search bar */}
           <div className="relative mt-4 md:mt-0 pr-6 md:pr-0">
             <span className="absolute inset-y-0 left-0 flex items-center md:pl-3 -top-3 md:-top-0">

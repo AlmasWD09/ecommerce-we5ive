@@ -36,7 +36,7 @@ const Summer = () => {
       <div className="flex justify-between mb-2">
         <div>
           <h2 className="uppercase text-primary ">Summer</h2>
-          <p>Big Deal</p>
+          <p className="font-semibold">Big Deal</p>
         </div>
         <div className="flex gap-2">
           <span className="border border-primary rounded-full flex justify-center items-center h-8 w-8"><BsArrowLeft /></span>
@@ -47,7 +47,7 @@ const Summer = () => {
         {products.map((product, idx) => (
           <div
             key={idx}
-            className="bg-white rounded-lg shadow-md p-2 hover:shadow-lg transition duration-300"
+            className="bg-white rounded-lg shadow-md p-2 hover:shadow-2xl transition duration-300"
           >
             <div className="relative h-[220px] text-center">
               <Image

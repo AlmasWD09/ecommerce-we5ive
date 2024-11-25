@@ -117,22 +117,5 @@
       "/images/summer/image 3.png"
     ],
     "reviews": 121
-  },
-  {
-    "id": 2,
-    "name": "Half Sleeve Shirt",
-    "image": "/images/summer/image 4.png",
-    "rating": 4.0,
-    "price": 2300,
-    "availableSizes": ["S", "M", "L", "XL"],
-    "availableColors": ["Off White", "Black"],
-    "description": "A stylish half sleeve shirt for casual wear.",
-    "images": [
-      "/images/summer/image 4.png",
-      "/images/summer/image 4.png",
-      "/images/summer/image 4.png",
-      "/images/summer/image 4.png"
-    ],
-    "reviews": 89
   }
 ]

@@ -12,7 +12,7 @@ const Reviews = () => {
 
     return (
         <>
-            <div className="bg-white shadow rounded-lg mt-20">
+            <div className="bg-white  rounded-lg mt-20">
                 <div className="flex items-center px-4 lg:px-8 pt-4 gap-4">
                     <button>Details</button>
                     <button className="font-semibold text-primary">Review & Rating</button>
