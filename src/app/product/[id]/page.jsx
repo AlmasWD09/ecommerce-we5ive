@@ -1,5 +1,6 @@
 'use client';
 import RelatedProduct from '@/components/RelatedProduct';
+import Reviews from '@/components/Reviews';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { use } from 'react';
@@ -53,9 +54,9 @@ const ProductDetails = ({ params }) => {
                             width={200}
                             height={200}
                             layout="responsive"
-                            className="rounded-lg shadow-md bg-red-200 max-w-[650px] max-h-[550px] object-center object-contain "
+                            className="rounded-lg shadow-md bg-primaryGray/50 max-w-[650px] max-h-[550px] object-center object-contain "
                         />
-                        <div className="flex justify-center gap-4 mt-4">
+                        <div className=" hidden lg:flex justify-center gap-4 mt-4">
                             {product.images.map((img, idx) => (
                                 <Image
                                     key={idx}
@@ -64,7 +65,7 @@ const ProductDetails = ({ params }) => {
                                     width={100}
                                     height={100}
 
-                                    className="rounded-lg cursor-pointer bg-gray-300"
+                                    className="rounded-lg cursor-pointer bg-primaryGray/50 px-2"
                                 />
                             ))}
                         </div>
@@ -83,7 +84,7 @@ const ProductDetails = ({ params }) => {
                             </div>
                         </div>
                         <p className="text-lg text-gray-600">BDT {product.price}</p>
-                        <div className='flex justify-between'>
+                        <div className='flex flex-col lg:flex-row justify-between'>
                             {/* Sizes */}
                             <div className="mt-4">
                                 <p className="font-semibold">Available Size:</p>
@@ -112,8 +113,8 @@ const ProductDetails = ({ params }) => {
                                             key={idx}
                                             onClick={() => setSelectedColor(color)}
                                             className={`border rounded px-4 py-2 ${selectedColor === color
-                                                    ? "bg-purple-500 text-white"
-                                                    : "bg-gray-200"
+                                                    ? "bg-primary text-white"
+                                                    : "bg-primaryGray/50"
                                                 }`}
                                         >
                                             {color}
@@ -126,7 +127,7 @@ const ProductDetails = ({ params }) => {
                         {/* Quantity */}
                         <div>
                             <p className='font-semibold mt-4'>Quantity</p>
-                            <div className="max-w-32 bg-gray-100 flex items-center gap-4 mt-2 border rounded-full">
+                            <div className="max-w-32 bg-primaryGray/50 flex items-center gap-4 mt-2 border rounded-full">
                                 <button
                                     onClick={() =>
                                         setQuantity((prev) => (prev > 1 ? prev - 1 : 1))
@@ -147,7 +148,7 @@ const ProductDetails = ({ params }) => {
 
                         {/* Buttons */}
                         <div className="mt-6 flex gap-4">
-                            <button className="bg-purple-500 text-white px-6 py-2 rounded">
+                            <button className="bg-primary text-white px-6 py-2 rounded">
                                 Buy Now
                             </button>
                             <button className="border border-purple-500 px-6 py-2 rounded">
@@ -158,6 +159,7 @@ const ProductDetails = ({ params }) => {
                 </div>
             </div>
             {/* related product component here.. */}
+            <Reviews />
             <RelatedProduct />
         </section>
     );

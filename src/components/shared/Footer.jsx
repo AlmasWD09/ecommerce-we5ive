@@ -8,11 +8,11 @@ import { GrLinkedinOption } from "react-icons/gr";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-gray-400 text-white">
+    <footer className="bg-[#1D1D1D] text-white">
       <section className="container mx-auto py-10 px-4">
         <div className=" flex flex-col lg:flex-row justify-between gap-6 lg:gap-16 "> 
         <div className="w-full lg:w-[50%] space-y-2">
-          <Image src="/images/header/logo.png" alt="logo" height={40} width={120} />
+          <Image src="/images/header/footer.png" alt="logo" height={40} width={120} />
           <p className="max-w-lg">Saepe quo suscipit vitae quia. Repudiandae nobis quis. Laboriosam unde quae qui quasi mollitia tenetur. Dicta explicabo est consectetur maxime quos fugit velit assumenda est. </p>
         </div>
         
@@ -31,7 +31,7 @@ const Footer = () => {
                 className=" w-full p-4 outline-none rounded-l-md"
               />
 
-              <button className="p-4 bg-red-600 text-white font-bold rounded-r-md">
+              <button className="p-4 bg-primary text-white font-bold rounded-r-md">
                 Subscribe
               </button>
             </form>

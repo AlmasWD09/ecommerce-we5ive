@@ -66,5 +66,73 @@
       "/images/summer/image 6.png"
     ],
     "reviews": 78
+  },
+  {
+    "id": 3,
+    "name": "Woman Wearing Sari",
+    "image": "/images/summer/image 5.png",
+    "rating": 4.8,
+    "price": 2300,
+    "availableSizes": ["S", "M", "L", "XL"],
+    "availableColors": ["Off White", "Black"],
+    "description": "A beautiful sari perfect for any occasion.",
+    "images": [
+      "/images/summer/image 5.png",
+      "/images/summer/image 5.png",
+      "/images/summer/image 5.png",
+      "/images/summer/image 5.png"
+    ],
+    "reviews": 145
+  },
+  {
+    "id": 4,
+    "name": "Checkered Shirt",
+    "image": "/images/summer/image 6.png",
+    "rating": 4.3,
+    "price": 2300,
+    "availableSizes": ["S", "M", "L", "XL"],
+    "availableColors": ["Off White", "Black"],
+    "description": "A trendy checkered shirt for daily wear.",
+    "images": [
+      "/images/summer/image 6.png",
+      "/images/summer/image 6.png",
+      "/images/summer/image 6.png",
+      "/images/summer/image 6.png"
+    ],
+    "reviews": 78
+  },
+  {
+    "id": 1,
+    "name": "Indian Sharee",
+    "image": "/images/summer/image 3.png",
+    "rating": 4.5,
+    "price": 2300,
+    "availableSizes": ["S", "M", "L", "XL"],
+    "availableColors": ["Off White", "Black"],
+    "description": "A high-quality Indian Sharee for special occasions.",
+    "images": [
+      "/images/summer/image 3.png",
+      "/images/summer/image 3.png",
+      "/images/summer/image 3.png",
+      "/images/summer/image 3.png"
+    ],
+    "reviews": 121
+  },
+  {
+    "id": 2,
+    "name": "Half Sleeve Shirt",
+    "image": "/images/summer/image 4.png",
+    "rating": 4.0,
+    "price": 2300,
+    "availableSizes": ["S", "M", "L", "XL"],
+    "availableColors": ["Off White", "Black"],
+    "description": "A stylish half sleeve shirt for casual wear.",
+    "images": [
+      "/images/summer/image 4.png",
+      "/images/summer/image 4.png",
+      "/images/summer/image 4.png",
+      "/images/summer/image 4.png"
+    ],
+    "reviews": 89
   }
 ]

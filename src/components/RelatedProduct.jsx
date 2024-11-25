@@ -42,7 +42,7 @@ const RelatedProduct = () => {
               alt={product.name}
               width={300}
               height={300}
-              className="max-h-[200px] bg-gray-200 object-contain bg-center rounded-md "
+              className="max-h-[200px] w-full bg-primaryGray/50 object-contain bg-center rounded-md "
             />
           </div>
           <div className="mt-4">

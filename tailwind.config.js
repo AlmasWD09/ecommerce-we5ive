@@ -19,29 +19,16 @@ module.exports = {
         },
       },
       colors: {
-        // background: "var(--background)",
-        // foreground: "var(--foreground)",
-        primaryLight: "#fd8802",
-        // secondary: "#fde68a", // amber-200
-        redish: "#ff0055", // dashboard
-        globalText: "#9B9B93", // textcolor
+        primary: "#7e53d4", 
+        primaryGray: "#EEECFB",
 
-        primary: "#FF9100", //orange
-        primaryGray: "#f9ac7d",
-
-        secondary: "#4681F4", // blue
-        secondaryGray: "#bbebff", //
-
-        secondaryBg: "#FFFBE6", //snehashisroy
-        third: "#D5ED9F", //snehashisroy
-        fourth: "#00712D", //snehashisroy
+        secondary: "#4681F4",
+        secondaryGray: "#bbebff",
       },
     },
     fontFamily: {
-      urbanist: ["Inter"],
-      kanit: ["Kanit"],
-      poppins: ["Poppins"],
-      Inter: ["Inter"],
+      Manrope: "'Manrope', 'sans-serif'",
+      Pacifico: "'Pacifico', 'cursive'",
     },
   },
   plugins: [],

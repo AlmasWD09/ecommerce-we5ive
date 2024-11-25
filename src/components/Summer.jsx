@@ -56,7 +56,7 @@ const Summer = () => {
                 alt={product.name}
                 width={300}
                 height={300}
-                className="max-h-[200px] bg-gray-200 object-contain bg-center rounded-md "
+                className="max-h-[200px] w-full bg-primaryGray/50 object-contain bg-center rounded-md "
               />
               <span className="absolute h-[66px] w-12 top-0 right-2 px-3 flex justify-center items-center bg-primary text-white text-sm rounded-b-full">
                 Up to 40%
